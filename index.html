@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leefresh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="hamburgers.css" />
+  </head>
+  <body>
+    <div class="leefresh-body-container">
+      <!-- header section start  -->
+      <header>
+        <nav>
+          <div class="leefresh-logo-section">
+            <img src="./images/logo3.png" alt="" />
+          </div>
+          <div class="leefresh-menu-section">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Our Products</li>
+              <a href="contact.html" style="text-decoration: none">
+                <li>Contact Us</li></a
+              >
+            </ul>
+            <div class="display-none">
+              <button
+                class="hamburger hamburger--collapse"
+                type="button"
+                onclick="activeHamburg()"
+              >
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <div class="mob-nav">
+              <div class="mob-nav-container">
+                <span>HOME</span>
+                <span>ABOUT</span>
+                <a href="contact.html" style="text-decoration: none">
+                  <span>CONTACT US</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header section end  -->
+      <!-- carousel section start  -->
+      <div class="leefresh-carousel-container">
+        <div class="leefresh-carousel-wrapper">
+          <img src="./images/slider1.jpeg" alt="" />
+          <img src="./images/slider2.jpg" alt="" />
+        </div>
+      </div>
+      <!-- carousel section end  -->
+
+      <!-- section first start  -->
+      <section class="leefresh-first-section">
+        <div class="leefresh-first-container">
+          <div class="leefresh-logo-img" style="text-align: center">
+            <img
+              src="./images/round.png"
+              alt=""
+              width="200"
+              height="200"
+              style="display: inline-block"
+            />
+          </div>
+
+          <div
+            class="leefresh-first-content-details"
+            style="text-align: center"
+          >
+            <h3>EXPERIENCE</h3>
+            <h2 class="custom-h2">Lee fresh</h2>
+            <p style="font-weight: bold">
+              Welcome to Leefresh, your one-stop destination for the freshest,
+              most vibrant vegetables delivered right to your doorstep. At
+              Leefresh, we believe in connecting people with nature's goodness,
+              providing a bounty of farm-fresh produce that not only nourishes
+              the body but also delights the senses.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- section first end  -->
+
+      <!-- section second start  -->
+      <section class="leefresh-second-section">
+        <!-- <div class="leefresh-carousal-overlay"></div> -->
+        <div class="leefresh-second-container">
+          <div class="leefresh-second-left">
+            <h2 class="custom-h2">OUR STORY</h2>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+                text-align: left;
+                margin-top: 1rem;
+              "
+            >
+              <p>
+                Our journey began with a simple yet profound vision: to
+                revolutionize the way people experience and consume vegetables.
+                We understand the importance of quality, which is why we work
+                directly with local farmers who share our passion for
+                sustainable and ethical farming practices. From field to fork,
+                every vegetable in our selection undergoes rigorous quality
+                checks to ensure that only the finest reaches your plat
+              </p>
+            </div>
+
+            <button class="leefresh-btn bg-green">Read more</button>
+          </div>
+          <div class="leefresh-second-right">
+            <div class="leefresh-second-right-image">
+              <!-- <img
+                src=""
+                alt=""
+                class="leefresh-second-right-image-main"
+              /> -->
+              <div class="leefresh-second-right-image-bg">
+                <img
+                  src="./images/human.webp"
+                  alt=""
+                  class="leefresh-second-right-absolute-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section second end  -->
+      <!-- section third start  -->
+      <section class="leefresh-third-section">
+        <div class="leefresh-third-container">
+          <div class="leefresh-third-left">
+            <h2 class="custom-h2">OUR PRODUCTS</h2>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+                text-align: left;
+                width: 100%;
+              "
+            >
+              <p>
+                Browse our extensive selection, from crisp greens like spinach
+                and kale to vibrant bell peppers, crunchy carrots, and succulent
+                tomatoes bursting with flavor. With Leefresh, you can indulge in
+                the colors and flavors of the season, knowing that each
+                vegetable has been carefully selected to elevate your dining
+                experience
+              </p>
+              <p>Come visit us today!</p>
+            </div>
+          </div>
+          <div class="leefresh-third-right">
+            <div class="leefresh-slick-slider">
+              <div class="leefresh-slick-container">
+                <div
+                  class="leefresh-prduct-card"
+                  style="background-image: url(./images/product1.webp)"
+                >
+                  <div class="leefresh-product-data">
+                    <h5 class="custom-h5">BANANA</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="leefresh-slick-container">
+                <div
+                  class="leefresh-prduct-card"
+                  style="background-image: url(./images/product2.webp)"
+                >
+                  <div class="leefresh-product-data">
+                    <h5 class="custom-h5">STRAWBERRY</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="leefresh-slick-container">
+                <div
+                  class="leefresh-prduct-card"
+                  style="background-image: url(./images/product3.webp)"
+                >
+                  <div class="leefresh-product-data">
+                    <h5 class="custom-h5">CITRUS</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="leefresh-slick-container">
+                <div
+                  class="leefresh-prduct-card"
+                  style="background-image: url(./images/product4.webp)"
+                >
+                  <div class="leefresh-product-data">
+                    <h5 class="custom-h5">POTATO</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="leefresh-slick-container">
+                <div
+                  class="leefresh-prduct-card"
+                  style="background-image: url(./images/product5.webp)"
+                >
+                  <div class="leefresh-product-data">
+                    <h5 class="custom-h5">CAPSICUM</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="leefresh-slick-container">
+                <div
+                  class="leefresh-prduct-card"
+                  style="background-image: url(./images/product6.webp)"
+                >
+                  <div class="leefresh-product-data">
+                    <h5 class="custom-h5">TOMATO</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="leefresh-slick-container">
+                <div
+                  class="leefresh-prduct-card"
+                  style="background-image: url(./images/product7.webp)"
+                >
+                  <div class="leefresh-product-data">
+                    <h5 class="custom-h5">EGG</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section third end  -->
+
+      <!-- section fourth start  -->
+      <section class="leefresh-fourth-section">
+        <!-- <div class="leefresh-carousal-overlay"></div> -->
+        <div class="leefresh-single-caraousal">
+          <div class="leefresh-single-carousal-wrap">
+            <div class="leefresh-img-carousal">
+              <img src="./images/map.png" />
+              <h5 class="custom-h5">AL AWEER</h5>
+              <h2 class="custom-h2">UNITED ARAB EMIRATES</h2>
+              <a
+                href="https://maps.app.goo.gl/vJJ1uhQZFJMVRjK4A?g_st=iw"
+                target="_blank"
+              >
+                <button class="leefresh-btn bg-green">More details</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section fourth start  -->
+
+      <!-- section fifth start  -->
+      <section class="leefresh-fifth-section">
+        <div class="main-container">
+          <h1
+            style="
+              font-size: 45px;
+              font-weight: 500;
+              text-align: center;
+              color: #0000;
+            "
+          >
+            Our Specialities
+          </h1>
+          <div class="leefresh-middle">
+            <div class="leefresh-middle-container">
+              <div class="leef-header-section" style="width: 33%">
+                <div
+                  style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                  "
+                >
+                  <div
+                    style="
+                      background-color: white;
+                      padding: 10px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <img
+                      src="./images/qlty5.png"
+                      alt="svg-icon"
+                      width="40"
+                      height="40"
+                      style="object-fit: contain"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="custom-h4">
+                      <font style="font-size: 1.42rem; font-weight: 400">
+                        Top Premium </font
+                      >Quality
+                    </h4>
+                    <p
+                      style="
+                        font-size: 1.1rem;
+                        color: #7a7b78;
+                        font-weight: 400;
+                        text-align: right;
+                      "
+                    >
+                      Our new shop offers the freshest, highest quality
+                      vegetables and fruits from trusted local farmers. Enjoy
+                      nutritious and delicious options daily. Visit us for a
+                      premium shopping experience.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                  "
+                >
+                  <div
+                    style="
+                      background-color: white;
+                      padding: 10px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <img
+                      src="./images/qlty6.png"
+                      alt="svg-icon"
+                      width="40"
+                      height="40"
+                      style="object-fit: contain"
+                    />
+                  </div>
+
+                  <div>
+                    <h4 class="custom-h4">
+                      <font style="font-size: 1.42rem; font-weight: 400">
+                        Always
+                      </font>
+                      Fresh Items
+                    </h4>
+                    <p
+                      style="
+                        font-size: 1.1rem;
+                        color: #7a7b78;
+                        font-weight: 400;
+                        text-align: right;
+                      "
+                    >
+                      Discover our new shop offering the freshest, highest
+                      quality vegetables and fruits from trusted local farmers.
+                      Enjoy nutritious, delicious options daily with a focus on
+                      health and quality.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                  "
+                >
+                  <div
+                    style="
+                      background-color: white;
+                      padding: 10px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <img
+                      src="./images/qlty7.png"
+                      alt="svg-icon"
+                      width="40"
+                      height="40"
+                      style="object-fit: contain"
+                    />
+                  </div>
+
+                  <div>
+                    <h4 class="custom-h4">
+                      <font style="font-size: 1.42rem; font-weight: 400">
+                        100% </font
+                      >Natural Product
+                    </h4>
+                    <p
+                      style="
+                        font-size: 1.1rem;
+                        color: #7a7b78;
+                        font-weight: 400;
+                        text-align: right;
+                      "
+                    >
+                      Explore our new shop featuring a curated selection of 100%
+                      natural vegetables and fruits sourced directly from local
+                      farmers. Experience the wholesome goodness of our produce,
+                      ensuring every bite is fresh and flavorful.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bouncing-image">
+                <img
+                  src="https://jthemes.net/themes/html/organic/assets/images/quality/qlty2.png"
+                  class="spec-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="leef-header-section" style="width: 33%">
+                <div
+                  style="
+                    display: flex;
+
+                    gap: 1rem;
+                    flex-direction: row;
+                    align-items: center;
+                  "
+                >
+                  <div
+                    style="
+                      background-color: white;
+                      padding: 10px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <img
+                      src="./images/qlty8.png"
+                      alt="svg-icon"
+                      width="40"
+                      height="40"
+                      style="object-fit: contain"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="custom-h4" style="text-align: left">
+                      100% Organic
+                      <font style="font-size: 1.42rem; font-weight: 400">
+                        Product
+                      </font>
+                    </h4>
+                    <p
+                      style="
+                        font-size: 1.1rem;
+                        color: #7a7b78;
+                        font-weight: 400;
+                        text-align: left;
+                      "
+                    >
+                      Discover our new shop, offering a curated selection of
+                      100% organic vegetables and fruits sourced directly from
+                      produce, ensuring every bite is fresh, flavorfu local
+                      farmers. Experience the wholesome goodness of ourl, and
+                      free from harmful chemicals.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    flex-direction: row;
+                  "
+                >
+                  <div
+                    style="
+                      background-color: white;
+                      padding: 10px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <img
+                      src="./images/qlty9.png"
+                      alt="svg-icon"
+                      width="40"
+                      height="40"
+                      style="object-fit: contain"
+                    />
+                  </div>
+
+                  <div>
+                    <h4 class="custom-h4" style="text-align: left">
+                      Super Healthy
+                      <font style="font-size: 1.42rem; font-weight: 400">
+                        Food
+                      </font>
+                    </h4>
+                    <p
+                      style="
+                        font-size: 1.1rem;
+                        color: #7a7b78;
+                        font-weight: 400;
+                        text-align: left;
+                      "
+                    >
+                      Welcome to our new shop, offering a curated selection of
+                      super healthy vegetables and fruits sourced from local
+                      farmers. Experience freshness and nutritional value in
+                      every bite, ensuring your well-being with each visit.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    flex-direction: row;
+                  "
+                >
+                  <div
+                    style="
+                      background-color: white;
+                      padding: 10px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <img
+                      src="./images/qlty10.png"
+                      alt="svg-icon"
+                      width="40"
+                      height="40"
+                      style="object-fit: contain"
+                    />
+                  </div>
+
+                  <div>
+                    <h4 class="custom-h4" style="text-align: left">
+                      Farm-Fresh
+                      <font style="font-size: 1.42rem; font-weight: 400">
+                        Harvest
+                      </font>
+                    </h4>
+                    <p
+                      style="
+                        font-size: 1.1rem;
+                        color: #7a7b78;
+                        font-weight: 400;
+                        text-align: left;
+                      "
+                    >
+                      Explore our shop's handpicked selection of fresh
+                      vegetables and fruits sourced directly from local farmers.
+                      Each item promises flavor and vitality, enhancing your
+                      culinary experience and well-being.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section fourth end  -->
+
+      <!-- footer section start  -->
+      <footer>
+        <div class="footer-upper-section">
+          <div class="footer-details-section">
+            <h6 class="custom-h5">CORPORATE</h6>
+            <p>Media</p>
+            <p>Career at leefresh</p>
+            <p>Blog</p>
+          </div>
+          <div class="footer-details-section">
+            <h6 class="custom-h5">CONTACT US</h6>
+            <p>leefresh Franchise</p>
+            <p>Get In Touch</p>
+          </div>
+          <div class="footer-details-section">
+            <h6 class="custom-h5">Get In Touch</h6>
+            <p>Contact us</p>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/leefresh.ae?igsh=MTk3YzR4NnN2M3NyNw%3D%3D&utm_source=qr"
+              >
+                <img
+                  src="./images/insta.svg"
+                  width="30"
+                  height="30"
+                  alt=""
+                  style="width: auto"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="footer-details-section"
+            style="
+              width: 300px;
+
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <img src="./images/logo3.png" alt="" width="50" height="50" />
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap: 2rem;
+                justify-content: center;
+              "
+            >
+              <img
+                src="./images/location.svg"
+                width="20"
+                style="width: 20%"
+                height="20"
+                alt=""
+              />
+              <p style="line-height: 1.5; width: 80%">
+                Shop No. 66, Wholesale Building-2 Al Aweer Central fruit &
+                Vegetable Market, Dubai, UAE
+              </p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap: 2rem;
+                justify-content: space-between;
+              "
+            >
+              <img
+                src="./images/phone.svg"
+                width="20"
+                height="20"
+                style="width: 20%"
+              />
+              <p style="line-height: 1.5; width: 80%">+971563790125</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+                gap: 2rem;
+              "
+            >
+              <img
+                src="./images/mail.svg"
+                width="20"
+                style="width: 20%"
+                height="20"
+                alt=""
+              />
+              <p style="line-height: 1.5; width: 80%">leefresh.ae@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            width: 100%;
+            height: 1px;
+            background-color: rgb(255, 255, 255, 0.2);
+            margin: 2rem 0;
+          "
+        >
+          <div class="footer-bottom-section">
+            <div class="footer-bottom-cpyright">
+              <p>2024 leefresh All rights reserved.</p>
+              <p>Privacy Policy | Terms of Use</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer section end  -->
+    </div>
+  </body>
+  <!-- Slick JavaScript -->
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="index.js" defer></script>
+</html>

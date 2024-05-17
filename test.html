@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slick Cards with Overflow</title>
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      .slick-slide {
+        margin: 0 10px;
+      }
+
+      .slick-slide img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .slick-prev,
+      .slick-next {
+        font-size: 1.5em;
+        color: #fff;
+        z-index: 1;
+      }
+
+      .slick-prev {
+        left: 10px;
+      }
+
+      .slick-next {
+        right: 10px;
+      }
+
+      .slick-dots {
+        bottom: 10px;
+      }
+
+      .slick-dots li button:before {
+        color: #fff;
+      }
+
+      .slick-dots li.slick-active button:before {
+        color: #007bff;
+      }
+
+      .leefresh-slick-container {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .leefresh-slick-card {
+        position: relative;
+        width: 100%;
+        height: 200px; /* Adjust card height as needed */
+      }
+
+      .leefresh-slick-card .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .leefresh-slick-card .content {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="leefresh-slick-container">
+      <div class="leefresh-slick">
+        <div class="leefresh-slick-card">
+          <div
+            class="background-image"
+            style="background-image: url('https://via.placeholder.com/200x200')"
+          ></div>
+          <div class="content">
+            <h3>Card 1</h3>
+            <p>This is card 1.</p>
+          </div>
+          <div class="content">
+            <h3>Card 1</h3>
+            <p>This is card 1.</p>
+          </div>
+          <div class="content">
+            <h3>Card 1</h3>
+            <p>This is card 1.</p>
+          </div>
+          <div class="content">
+            <h3>Card 1</h3>
+            <p>This is card 1.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slick JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+      $(document).ready(function () {
+        $(".leefresh-slick").slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>

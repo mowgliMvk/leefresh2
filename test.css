@@ -1,0 +1,130 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Specific styles for card slider */
+.leefresh-card-slider {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.leefresh-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+  transition: all 0.1s linear;
+}
+
+.leefresh-card .leefresh-main-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.leefresh-card .leefresh-main-link:focus {
+  outline: none;
+}
+
+.leefresh-card .leefresh-main-link:focus .leefresh-title {
+  outline: 3px dashed orange;
+  outline-offset: -4px;
+  color: royalblue;
+  text-decoration: underline;
+}
+
+.leefresh-card .leefresh-title {
+  color: #000;
+  margin: 0;
+  padding: 10px 10px 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.leefresh-card .leefresh-title:hover {
+  text-decoration: underline;
+}
+
+.leefresh-card .leefresh-image {
+  order: -1;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leefresh-card .leefresh-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.leefresh-card .leefresh-image:hover img {
+  width: 110%;
+  height: 110%;
+}
+
+.leefresh-card .leefresh-description {
+  margin: 7px 10px 15px 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.leefresh-card:hover {
+  border-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.leefresh-card:hover .leefresh-image img,
+.leefresh-card:focus .leefresh-image img {
+  filter: grayscale(0);
+}
+
+.leefresh-card a:focus {
+  outline: none;
+}
+/* Slick carousel button styles */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: rgba(255, 255, 255, 0.7); /* Background color */
+  color: black; /* Text color */
+  border: none;
+  border-radius: 50%; /* Makes it round */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Hover background color */
+  color: black; /* Hover text color */
+}
+
+.slick-prev {
+  left: 10px; /* Position to the left */
+}
+
+.slick-next {
+  right: 10px; /* Position to the right */
+}
